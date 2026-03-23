@@ -1,4 +1,5 @@
 # Care Clarity — Full Product Prompt (3-23-2026)
+## Author: Kim Nguyen
 
 ## What We're Building
 "Care Clarity" is a bilingual (Spanish ↔ English) medical translation web app (PWA) that helps

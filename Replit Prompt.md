@@ -1,4 +1,5 @@
 # Care Clarity MVP — Replit Prompt (MVP Focus)
+## Author: Kim Nguyen
 
 ## What We're Building
 "Care Clarity" is a bilingual (Spanish ↔ English) medical translation web app (PWA) that helps
