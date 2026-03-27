@@ -22,3 +22,6 @@ npm-debug.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+# Docx Files
+03-02-2026.docx
