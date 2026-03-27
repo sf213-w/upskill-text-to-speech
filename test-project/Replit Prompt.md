@@ -16,7 +16,7 @@ prototype/demo MVP — focused on proving the core idea works, not on production
 - **Frontend**: React (Vite) + Tailwind CSS — mobile-first PWA
 - **i18n**: i18next — full Spanish/English UI switching
 - **Speech-to-Text**: Web Speech API (browser-native, free, no API key needed)
-- **Translation**: MyMemory API (free, keyless — https://api.mymemory.translated.net/get)
+- **Translation**: MyMemory API (free, keyless — <https://api.mymemory.translated.net/get>)
 - **Text-to-Speech**: Browser SpeechSynthesis API (free, built-in)
 - **Storage**: localStorage only — no database, no user accounts
 - **Backend**: Node.js + Express — single translation route only
@@ -123,7 +123,7 @@ One Express route only:
 
 ## File Structure
 
-```
+``` bash
 /care-clarity
   /client (React Vite PWA)
     /src
@@ -152,11 +152,12 @@ One Express route only:
   /server
     index.js              ← Express app + /api/translate route
   package.json
-``` bash
+```
 
 ---
 
 ## Build Order
+
 1. Vite + React PWA + Tailwind setup
 2. i18next setup — wire `en.json` / `es.json` + language toggle (default: English)
 3. Express server + `/api/translate` route (MyMemory API)
@@ -170,6 +171,7 @@ One Express route only:
 ---
 
 ## Do NOT Build in MVP (Save for Pilot)
+
 - User login / authentication
 - Supabase or any database
 - Azure Speech SDK or Azure Translator
