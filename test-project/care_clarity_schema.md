@@ -31,7 +31,7 @@
 Stores the directory of healthcare providers including contact info, location, and availability.
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `name` | `text` | |
 | `provider_type` | `text` | e.g. physician, specialist |
@@ -62,7 +62,7 @@ Stores the directory of healthcare providers including contact info, location, a
 Stores patient demographic and contact information.
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `first_name` | `text` | |
 | `last_name` | `text` | |
@@ -94,7 +94,7 @@ Extends `patients` with app-specific state: language preference, onboarding prog
 **PRD references:** §5.9, §5.91
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients (UNIQUE) |
 | `preferred_language` | `text` | ISO 639-1 code. Default: `en` |
@@ -114,7 +114,7 @@ Stores each signed consent form with timestamp and the language in which it was 
 **PRD references:** §5.91
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `consent_type` | `text` | e.g. `hipaa` · `terms_of_service` · `data_sharing` · `ai_interpretation` |
@@ -130,7 +130,7 @@ Stores each signed consent form with timestamp and the language in which it was 
 Links a patient to a care provider for a scheduled visit.
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `care_provider_id` | `uuid` | FK → care_providers |
@@ -149,7 +149,7 @@ Links a patient to a care provider for a scheduled visit.
 Records medications prescribed to a patient.
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `medication_name` | `text` | |
@@ -169,7 +169,7 @@ Records medications prescribed to a patient.
 Tracks when a patient is referred from one provider to another.
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `referring_provider_id` | `uuid` | FK → care_providers |
@@ -189,7 +189,7 @@ Handles all document upload and translation flows: intake forms, post-visit pres
 **PRD references:** §5.3, §5.6, §5.7, §5.8
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `appointment_id` | `uuid` | FK → appointments (nullable) |
@@ -214,7 +214,7 @@ Stores patient lab results. One of the five data categories displayed on the hea
 **PRD references:** §5.92
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `ordering_provider_id` | `uuid` | FK → care_providers (nullable) |
@@ -237,7 +237,7 @@ Provider-issued care plans assigned to a patient. One of the five data categorie
 **PRD references:** §5.92
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `care_provider_id` | `uuid` | FK → care_providers (nullable) |
@@ -259,7 +259,7 @@ Bidirectional secure messaging between patients and providers. One of the five d
 **PRD references:** §5.92
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `care_provider_id` | `uuid` | FK → care_providers (nullable) |
@@ -281,7 +281,7 @@ Stores delegated access relationships. A patient can grant one or more caregiver
 **PRD references:** §5.92
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `patient_id` | `uuid` | FK → patients |
 | `name` | `text` | |
@@ -303,7 +303,7 @@ Stores individual translated utterances linked to an appointment. Used by the li
 **PRD references:** §5.4
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `uuid` | PK |
 | `appointment_id` | `uuid` | FK → appointments |
 | `target_language` | `text` | ISO 639-1 code |
@@ -315,14 +315,14 @@ Stores individual translated utterances linked to an appointment. Used by the li
 
 ---
 
-## sessions *(app-local)*
+## sessions
 
 Stores full real-time translation sessions created by the Care Clarity app. Independent of the `conversations` table. Sessions are ephemeral by default and only persisted when the user opts in to save a transcript.
 
 **PRD references:** §5.4, §5.5
 
 | Column | Type | Notes |
-|--------|------|-------|
+| ------ | ---- | ----- |
 | `id` | `text` | PK |
 | `exchanges` | `jsonb` | Array of `{ speaker, original, translated, timestamp }` |
 | `created_at` | `timestamptz` | |
@@ -331,7 +331,7 @@ Stores full real-time translation sessions created by the Care Clarity app. Inde
 
 ## Relationships
 
-```
+```bash
 patients ─────────────────────┬── patient_profiles   (1:1)
                                ├── consent_records    (1:many)
                                ├── appointments ──────┬── conversations (1:many)
@@ -356,7 +356,7 @@ care_providers ────────────────┬── appoint
 ## Enum Reference
 
 | Table | Column | Allowed Values |
-|-------|--------|----------------|
+| ----- | ------ | -------------- |
 | `patient_profiles` | `onboarding_status` | `pending` · `in_progress` · `complete` |
 | `patient_profiles` | `privacy_level` | `standard` · `restricted` · `caregiver_shared` |
 | `uploaded_documents` | `document_type` | `intake_form` · `prescription` · `referral` · `lifestyle` · `pharmacy` |

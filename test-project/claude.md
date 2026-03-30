@@ -1,11 +1,13 @@
 # Speech2Text Healthcare Translation App - Complete Database Setup
 
 ## Overview
+
 This database structure supports an end-to-end healthcare journey translation service for non-English speaking patients, tracking their complete care process from identifying ailments to post-visit follow-ups.
 
 ---
 
 ## Table of Contents
+
 1. [Database Architecture](#database-architecture)
 2. [Complete SQL Schema](#complete-sql-schema)
 3. [Implementation Guide](#implementation-guide)
@@ -18,68 +20,89 @@ This database structure supports an end-to-end healthcare journey translation se
 ### Core Entities
 
 #### 1. **patients**
+
 Stores patient profile information and preferences.
+
 - Primary identifier: `id` (UUID)
 - Tracks language preferences for translation
 - Stores contact and demographic information
 - Includes insurance information for provider network searches
 
 #### 2. **care_providers**
+
 Medical professionals and facilities database.
+
 - Supports search by specialty, location, and language
 - Tracks network affiliations for insurance matching
 - Includes contact and appointment booking information
 
 #### 3. **appointments**
+
 Central table tracking the healthcare journey timeline.
+
 - Links patients to care providers
 - Tracks appointment status (scheduled, completed, cancelled)
 - Records appointment type (initial, follow-up, specialist)
 - Stores administrative form completion status
 
 #### 4. **conversations**
+
 Captures all patient-physician dialogue during consultations.
+
 - Stores original and translated text
 - Links to specific appointments
 - Includes speaker identification
 - Supports searchable conversation history with metadata tags
 
 #### 5. **prescriptions**
+
 Post-visit medication recommendations.
+
 - Links to appointments
 - Tracks fulfillment status
 - Stores pharmacy information
 - Includes translated instructions
 
 #### 6. **referrals**
+
 Specialist care referrals that loop back to the care journey.
+
 - Links referring and target providers
 - Tracks referral status
 - Stores reason and urgency
 
 #### 7. **care_recommendations**
+
 Non-medication post-visit guidance (lifestyle, exercise, diet, physiotherapy).
+
 - Stores recommendation type and translated instructions
 - Tracks compliance/completion
 - Links to supporting documents
 
 #### 8. **documents**
+
 Stores metadata for all documents (forms, instruction sheets, conversation transcripts).
+
 - Links to various entities (appointments, prescriptions, recommendations)
 - Tracks document type and translation status
 - Stores file paths or URLs for actual document storage
 
 #### 9. **insurance_providers**
+
 Insurance company information for network searches.
+
 - Supports provider network matching
 - Stores plan details
 
 #### 10. **search_history**
+
 Tracks user searches for care providers.
+
 - Helps refine search algorithms
 - Provides user journey insights
 
 ### Database Relationships
+
 patients (1) ----< (M) appointments
 care_providers (1) ----< (M) appointments
 appointments (1) ----< (M) conversations
@@ -94,27 +117,32 @@ patients (1) ----< (M) search_history
 ### Key Features
 
 #### Multi-language Support
+
 - All patient-facing content fields support translation
 - Original and translated text stored separately
 - Language codes follow ISO 639-1 standard
 
 #### Timestamps
+
 - All tables include `created_at` and `updated_at` timestamps
 - Conversation entries include precise timestamps for dialog flow
 - Appointment scheduling includes timezone support
 
 #### Security Considerations
+
 - Patient data requires HIPAA compliance measures
 - Row Level Security (RLS) policies ensure patients only access their own data
 - Healthcare providers only access their assigned patients
 - Admin role for system management
 
 #### Search & Retrieval
+
 - Full-text search on conversations using metadata tags
 - Indexed fields for provider search (specialty, location, language)
 - Appointment history easily retrievable with related documents
 
 ### Data Volume Planning
+
 - Initial capacity: 100 patients
 - Expected data growth:
   - ~5-10 appointments per patient per year
@@ -123,6 +151,7 @@ patients (1) ----< (M) search_history
   - Estimated total: ~10,000-15,000 conversation records in first year
 
 ### Performance Optimization
+
 - Indexes on foreign keys for join performance
 - Composite index on patient_id + created_at for timeline queries
 - GiN index on conversation metadata for tag searches
