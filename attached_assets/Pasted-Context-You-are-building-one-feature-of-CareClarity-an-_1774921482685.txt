@@ -1,0 +1,110 @@
+Context
+You are building one feature of CareClarity, an AI-powered clinical interpreter app for patients with Limited English Proficiency. The app is a mobile web application built in Replit. The backend uses Supabase. Another team member has already set up the Supabase database schema and the frontend design system. Your job is to build a single, self-contained feature: the Health Information Setup Flow (PRD Section 5.91).
+This feature is reached immediately after onboarding. It collects the patient's health information through a series of clean, simple mobile screens before routing them to the main health dashboard.
+
+What to Build
+A multi-screen stepped intake flow — NOT a single scrolling form. The user taps a forward arrow to move from screen to screen. The whole flow should be completable in approximately 30 seconds.
+Screen 0 — Language Selector (first screen, before anything else)
+
+Ask the user: "Please select your language / Por favor selecciona tu idioma"
+Two large pill-shaped buttons: English | Español
+Once selected, all subsequent screens render in that language. For this POC, only English and Spanish are required.
+No other content is shown until a language is selected.
+
+Screen 1 — Basic Profile
+
+First name, Last name (text fields)
+Date of birth (date picker)
+Biological sex (dropdown: Male / Female / Prefer not to say)
+Primary language already set — display as read-only confirmation, not re-askable
+
+Screen 2 — Health History
+
+Known conditions (multi-select checkboxes): Diabetes, Heart disease, Hypertension, Asthma, Cancer, None of the above, Other
+Allergies: text field (e.g. "penicillin, peanuts") — keep it simple, free text is fine
+Surgical history: dropdown (None / Yes, minor / Yes, major)
+
+Screen 3 — Current Medications
+
+Are you currently taking any medications? Toggle (Yes / No)
+If Yes: show up to 3 medication rows, each with: Medication name (text field) + Dosage (text field, e.g. "10mg daily")
+Add medication button to reveal additional rows (max 3 for POC)
+
+Screen 4 — Today's Visit
+
+What brings you in today? Free-text field, large, multi-line
+How severe are your symptoms? Slider or segmented selector: Mild / Moderate / Severe
+How long have you had these symptoms? Dropdown: Today / 2–3 days / About a week / More than a week / More than a month
+
+Screen 5 — Consent & Privacy
+
+Display a brief consent statement (translated into selected language):
+"I consent to CareClarity storing and using my health information to assist with my care. I understand this is a demonstration application."
+Checkbox: "I have read and understood the above" (required before continuing)
+Privacy setting: Who can see my health information? Radio buttons: Only me / Me and my care team
+"Save and Continue" button — disabled until checkbox is ticked
+
+Completion
+
+On save: write all collected data to Supabase (see Data section below)
+Route user to the health dashboard screen (this screen is built by another team member — just navigate to /dashboard or equivalent)
+
+
+Screen Design Rules
+Follow the CareClarity Design System (Sage & Mist palette) throughout:
+
+Background: #F2F7F5 (--cc-surface)
+Primary CTA button: full width, 52dp height, background #1D7A6C, text #F2F7F5, border-radius 26dp, font 16sp Medium. Disabled state: opacity 0.4.
+Input fields: background #FFFFFF, border 1px #9FCFC4, border-radius 8dp, height 52dp, padding 0 16dp. Focused state: border 2px #3DA898.
+Cards / grouped content: background #F2F7F5, border-radius 12dp, padding 16dp
+Checkboxes and radio buttons: minimum touch target 48×48dp
+Language pills (Screen 0): background #D6EDE7, text #0F4A40, border-radius 20dp, padding 6dp 14dp, 14sp Medium. Selected state: background #1D7A6C, text #F2F7F5
+Typography: Inter font (load from Google Fonts CDN). Page titles: 28sp Bold #07241E. Section headers: 22sp Medium #1D7A6C. Body: 16sp Regular #07241E. Never below 16sp on any readable element.
+Screen margins: 20dp left and right
+Progress indicator: a row of step dots at the top of every screen (Screens 1–5). Completed steps: filled #1D7A6C. Current step: filled #3DA898. Upcoming steps: #D6EDE7. Do not show the progress indicator on Screen 0 (language selection).
+Navigation: "Back" chevron top-left (hidden on Screen 0 and Screen 1). "Next →" primary CTA button at the bottom of each screen. Back button preserves all previously entered values.
+No shadows. Use a 0.5px #D6EDE7 border to delineate surfaces instead.
+WCAG 2.1 AA compliance required. Minimum 4.5:1 contrast for all body text.
+All labels, instructions, button text, error messages, and placeholder text must be fully translated into the selected language. No English-only fallback text anywhere in the UI after language selection.
+
+
+Spanish Translations for Key UI Strings
+EnglishSpanishNextSiguienteBackAnteriorSave and ContinueGuardar y continuarFirst nameNombreLast nameApellidoDate of birthFecha de nacimientoBiological sexSexo biológicoKnown conditionsCondiciones conocidasAllergiesAlergiasCurrent medicationsMedicamentos actualesWhat brings you in today?¿Qué lo trae hoy?Symptom severityGravedad de los síntomasMild / Moderate / SevereLeve / Moderado / GraveI have read and understood the aboveHe leído y entendido lo anteriorOnly meSolo yoMe and my care teamYo y mi equipo médico
+
+Supabase Data
+On completion of Screen 5, write a single record to a patient_health_profile table with the following fields. If the table doesn't exist yet, create it:
+patient_health_profile
+  id                  uuid, primary key, default gen_random_uuid()
+  user_id             uuid (foreign key to auth.users)
+  language_preference text ('en' or 'es')
+  first_name          text
+  last_name           text
+  date_of_birth       date
+  biological_sex      text
+  known_conditions    text[] (array)
+  allergies           text
+  surgical_history    text
+  medications         jsonb (array of {name, dosage})
+  visit_reason        text
+  symptom_severity    text
+  symptom_duration    text
+  consent_given       boolean
+  privacy_setting     text ('private' or 'care_team')
+  created_at          timestamptz, default now()
+
+Technical Notes
+
+This is a mobile web app — build with React (or plain HTML/CSS/JS if the team stack is not yet decided). Mobile-first layout, max content width 480px centered.
+Use CSS custom properties for all colors (e.g. --cc-surface: #F2F7F5) so the design system tokens are easy to update.
+Use CSS logical properties (margin-inline-start not margin-left) to support RTL layout for future Hindi support.
+All form state lives in component state — no external state library needed for this feature.
+No authentication logic needed in this feature — assume the user is already logged in and user_id is available from the session context passed in by the parent app.
+On Supabase write failure, show a plain-language error message in the selected language and allow the user to retry. Do not silently fail.
+This feature should export as a single self-contained component or page that the team lead can merge into the main app.
+
+
+What This Feature Is NOT Responsible For
+
+User authentication or login (built by another team member)
+The health dashboard that follows (built by another team member)
+Translation of free-text input fields via the Azure/Claude pipeline (built by another team member) — just capture the text as entered
