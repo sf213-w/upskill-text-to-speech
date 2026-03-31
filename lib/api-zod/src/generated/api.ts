@@ -14,3 +14,30 @@ import * as zod from "zod";
 export const HealthCheckResponse = zod.object({
   status: zod.string(),
 });
+
+/**
+ * Saves a patient's health intake information
+ * @summary Create patient health profile
+ */
+export const CreatePatientHealthProfileBody = zod.object({
+  userId: zod.string().nullish(),
+  languagePreference: zod.enum(["en", "es"]),
+  firstName: zod.string(),
+  lastName: zod.string(),
+  dateOfBirth: zod.coerce.date(),
+  biologicalSex: zod.string(),
+  knownConditions: zod.array(zod.string()),
+  allergies: zod.string().nullish(),
+  surgicalHistory: zod.string(),
+  medications: zod.array(
+    zod.object({
+      name: zod.string(),
+      dosage: zod.string(),
+    }),
+  ),
+  visitReason: zod.string(),
+  symptomSeverity: zod.enum(["mild", "moderate", "severe"]),
+  symptomDuration: zod.string(),
+  consentGiven: zod.boolean(),
+  privacySetting: zod.enum(["private", "care_team"]),
+});

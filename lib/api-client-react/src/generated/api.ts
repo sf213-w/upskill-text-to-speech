@@ -5,18 +5,26 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import type {
+  MutationFunction,
   QueryFunction,
   QueryKey,
+  UseMutationOptions,
+  UseMutationResult,
   UseQueryOptions,
   UseQueryResult,
 } from "@tanstack/react-query";
 
-import type { HealthStatus } from "./api.schemas";
+import type {
+  CreatePatientHealthProfileRequest,
+  ErrorResponse,
+  HealthStatus,
+  PatientHealthProfile,
+} from "./api.schemas";
 
 import { customFetch } from "../custom-fetch";
-import type { ErrorType } from "../custom-fetch";
+import type { ErrorType, BodyType } from "../custom-fetch";
 
 type AwaitedInput<T> = PromiseLike<T> | T;
 
@@ -99,3 +107,91 @@ export function useHealthCheck<
 
   return { ...query, queryKey: queryOptions.queryKey };
 }
+
+/**
+ * Saves a patient's health intake information
+ * @summary Create patient health profile
+ */
+export const getCreatePatientHealthProfileUrl = () => {
+  return `/api/patient/health-profile`;
+};
+
+export const createPatientHealthProfile = async (
+  createPatientHealthProfileRequest: CreatePatientHealthProfileRequest,
+  options?: RequestInit,
+): Promise<PatientHealthProfile> => {
+  return customFetch<PatientHealthProfile>(getCreatePatientHealthProfileUrl(), {
+    ...options,
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...options?.headers },
+    body: JSON.stringify(createPatientHealthProfileRequest),
+  });
+};
+
+export const getCreatePatientHealthProfileMutationOptions = <
+  TError = ErrorType<ErrorResponse>,
+  TContext = unknown,
+>(options?: {
+  mutation?: UseMutationOptions<
+    Awaited<ReturnType<typeof createPatientHealthProfile>>,
+    TError,
+    { data: BodyType<CreatePatientHealthProfileRequest> },
+    TContext
+  >;
+  request?: SecondParameter<typeof customFetch>;
+}): UseMutationOptions<
+  Awaited<ReturnType<typeof createPatientHealthProfile>>,
+  TError,
+  { data: BodyType<CreatePatientHealthProfileRequest> },
+  TContext
+> => {
+  const mutationKey = ["createPatientHealthProfile"];
+  const { mutation: mutationOptions, request: requestOptions } = options
+    ? options.mutation &&
+      "mutationKey" in options.mutation &&
+      options.mutation.mutationKey
+      ? options
+      : { ...options, mutation: { ...options.mutation, mutationKey } }
+    : { mutation: { mutationKey }, request: undefined };
+
+  const mutationFn: MutationFunction<
+    Awaited<ReturnType<typeof createPatientHealthProfile>>,
+    { data: BodyType<CreatePatientHealthProfileRequest> }
+  > = (props) => {
+    const { data } = props ?? {};
+
+    return createPatientHealthProfile(data, requestOptions);
+  };
+
+  return { mutationFn, ...mutationOptions };
+};
+
+export type CreatePatientHealthProfileMutationResult = NonNullable<
+  Awaited<ReturnType<typeof createPatientHealthProfile>>
+>;
+export type CreatePatientHealthProfileMutationBody =
+  BodyType<CreatePatientHealthProfileRequest>;
+export type CreatePatientHealthProfileMutationError = ErrorType<ErrorResponse>;
+
+/**
+ * @summary Create patient health profile
+ */
+export const useCreatePatientHealthProfile = <
+  TError = ErrorType<ErrorResponse>,
+  TContext = unknown,
+>(options?: {
+  mutation?: UseMutationOptions<
+    Awaited<ReturnType<typeof createPatientHealthProfile>>,
+    TError,
+    { data: BodyType<CreatePatientHealthProfileRequest> },
+    TContext
+  >;
+  request?: SecondParameter<typeof customFetch>;
+}): UseMutationResult<
+  Awaited<ReturnType<typeof createPatientHealthProfile>>,
+  TError,
+  { data: BodyType<CreatePatientHealthProfileRequest> },
+  TContext
+> => {
+  return useMutation(getCreatePatientHealthProfileMutationOptions(options));
+};

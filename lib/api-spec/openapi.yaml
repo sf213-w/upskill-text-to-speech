@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: patient
+    description: Patient health profile operations
 paths:
   /healthz:
     get:
@@ -24,6 +26,37 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /patient/health-profile:
+    post:
+      operationId: createPatientHealthProfile
+      tags: [patient]
+      summary: Create patient health profile
+      description: Saves a patient's health intake information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreatePatientHealthProfileRequest"
+      responses:
+        "201":
+          description: Profile created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PatientHealthProfile"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +66,139 @@ components:
           type: string
       required:
         - status
-
+    Medication:
+      type: object
+      properties:
+        name:
+          type: string
+        dosage:
+          type: string
+      required:
+        - name
+        - dosage
+    CreatePatientHealthProfileRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          nullable: true
+        languagePreference:
+          type: string
+          enum: [en, es]
+        firstName:
+          type: string
+        lastName:
+          type: string
+        dateOfBirth:
+          type: string
+          format: date
+        biologicalSex:
+          type: string
+        knownConditions:
+          type: array
+          items:
+            type: string
+        allergies:
+          type: string
+          nullable: true
+        surgicalHistory:
+          type: string
+        medications:
+          type: array
+          items:
+            $ref: "#/components/schemas/Medication"
+        visitReason:
+          type: string
+        symptomSeverity:
+          type: string
+          enum: [mild, moderate, severe]
+        symptomDuration:
+          type: string
+        consentGiven:
+          type: boolean
+        privacySetting:
+          type: string
+          enum: [private, care_team]
+      required:
+        - languagePreference
+        - firstName
+        - lastName
+        - dateOfBirth
+        - biologicalSex
+        - knownConditions
+        - surgicalHistory
+        - medications
+        - visitReason
+        - symptomSeverity
+        - symptomDuration
+        - consentGiven
+        - privacySetting
+    PatientHealthProfile:
+      type: object
+      properties:
+        id:
+          type: string
+        userId:
+          type: string
+          nullable: true
+        languagePreference:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        dateOfBirth:
+          type: string
+        biologicalSex:
+          type: string
+        knownConditions:
+          type: array
+          items:
+            type: string
+        allergies:
+          type: string
+          nullable: true
+        surgicalHistory:
+          type: string
+        medications:
+          type: array
+          items:
+            $ref: "#/components/schemas/Medication"
+        visitReason:
+          type: string
+        symptomSeverity:
+          type: string
+        symptomDuration:
+          type: string
+        consentGiven:
+          type: boolean
+        privacySetting:
+          type: string
+        createdAt:
+          type: string
+      required:
+        - id
+        - languagePreference
+        - firstName
+        - lastName
+        - dateOfBirth
+        - biologicalSex
+        - knownConditions
+        - surgicalHistory
+        - medications
+        - visitReason
+        - symptomSeverity
+        - symptomDuration
+        - consentGiven
+        - privacySetting
+        - createdAt
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+      required:
+        - error
+        - message

@@ -48,6 +48,20 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Artifacts
+
+### `artifacts/care-clarity` (`@workspace/care-clarity`)
+
+CareClarity mobile web app — health information setup intake flow for patients with Limited English Proficiency.
+
+- React + Vite, mobile-first (max-width 480px)
+- Multi-screen intake wizard: Screen 0 (language), Screen 1–5 (profile → history → meds → visit → consent)
+- Bilingual: English + Spanish, fully translated
+- CareClarity Design System: Sage & Mist palette (`--cc-surface: #F2F7F5`, `--cc-primary: #1D7A6C`)
+- On submission: POST to `/api/patient/health-profile`, then navigates to `/dashboard`
+- Translations: `src/lib/translations.ts`
+- Screen components: `src/pages/intake/`
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)

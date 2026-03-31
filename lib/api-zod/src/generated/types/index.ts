@@ -6,4 +6,11 @@
  * OpenAPI spec version: 0.1.0
  */
 
+export * from "./createPatientHealthProfileRequest";
+export * from "./createPatientHealthProfileRequestLanguagePreference";
+export * from "./createPatientHealthProfileRequestPrivacySetting";
+export * from "./createPatientHealthProfileRequestSymptomSeverity";
+export * from "./errorResponse";
 export * from "./healthStatus";
+export * from "./medication";
+export * from "./patientHealthProfile";

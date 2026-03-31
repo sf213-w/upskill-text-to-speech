@@ -8,3 +8,76 @@
 export interface HealthStatus {
   status: string;
 }
+
+export interface Medication {
+  name: string;
+  dosage: string;
+}
+
+export type CreatePatientHealthProfileRequestLanguagePreference =
+  (typeof CreatePatientHealthProfileRequestLanguagePreference)[keyof typeof CreatePatientHealthProfileRequestLanguagePreference];
+
+export const CreatePatientHealthProfileRequestLanguagePreference = {
+  en: "en",
+  es: "es",
+} as const;
+
+export type CreatePatientHealthProfileRequestSymptomSeverity =
+  (typeof CreatePatientHealthProfileRequestSymptomSeverity)[keyof typeof CreatePatientHealthProfileRequestSymptomSeverity];
+
+export const CreatePatientHealthProfileRequestSymptomSeverity = {
+  mild: "mild",
+  moderate: "moderate",
+  severe: "severe",
+} as const;
+
+export type CreatePatientHealthProfileRequestPrivacySetting =
+  (typeof CreatePatientHealthProfileRequestPrivacySetting)[keyof typeof CreatePatientHealthProfileRequestPrivacySetting];
+
+export const CreatePatientHealthProfileRequestPrivacySetting = {
+  private: "private",
+  care_team: "care_team",
+} as const;
+
+export interface CreatePatientHealthProfileRequest {
+  userId?: string | null;
+  languagePreference: CreatePatientHealthProfileRequestLanguagePreference;
+  firstName: string;
+  lastName: string;
+  dateOfBirth: string;
+  biologicalSex: string;
+  knownConditions: string[];
+  allergies?: string | null;
+  surgicalHistory: string;
+  medications: Medication[];
+  visitReason: string;
+  symptomSeverity: CreatePatientHealthProfileRequestSymptomSeverity;
+  symptomDuration: string;
+  consentGiven: boolean;
+  privacySetting: CreatePatientHealthProfileRequestPrivacySetting;
+}
+
+export interface PatientHealthProfile {
+  id: string;
+  userId?: string | null;
+  languagePreference: string;
+  firstName: string;
+  lastName: string;
+  dateOfBirth: string;
+  biologicalSex: string;
+  knownConditions: string[];
+  allergies?: string | null;
+  surgicalHistory: string;
+  medications: Medication[];
+  visitReason: string;
+  symptomSeverity: string;
+  symptomDuration: string;
+  consentGiven: boolean;
+  privacySetting: string;
+  createdAt: string;
+}
+
+export interface ErrorResponse {
+  error: string;
+  message: string;
+}
