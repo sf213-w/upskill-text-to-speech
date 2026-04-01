@@ -1,0 +1,16 @@
+packages:
+  "i18next": "Internationalization core"
+  "react-i18next": "React bindings for i18next"
+  "framer-motion": "Animations for microphone pulsing and page transitions"
+  "date-fns": "Date formatting for history sessions"
+  "uuid": "Generating unique IDs for sessions"
+  "@types/uuid": "Types for uuid"
+  "lucide-react": "Icons (already in stack but listed for clarity)"
+  "zustand": "Simple global state for settings"
+
+images: []
+
+notes:
+  - "Using window.SpeechRecognition and window.speechSynthesis for audio features."
+  - "i18next is configured to load translations synchronously from local objects to avoid network waterfall."
+  - "Assuming @workspace/api-client-react provides useTranslate mutation."

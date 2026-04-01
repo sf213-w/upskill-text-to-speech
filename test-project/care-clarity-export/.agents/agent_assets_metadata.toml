@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "27_UutOwatfBeM7vR3rUQ"
+uri = "file://database-schema.md"
+type = "text"
+title = "Care Clarity — Database Schema"
