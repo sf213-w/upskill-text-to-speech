@@ -1,0 +1,232 @@
+# Care Clarity — Change Request Prompt for Replit
+
+## Context
+Care Clarity is an existing bilingual (Spanish ↔ English) medical translation PWA.
+The following are 4 specific additions and updates to make to the current codebase.
+Do NOT rebuild or change anything that is not listed below.
+
+---
+
+## Change 1 — Calendar & Appointment Reminder (fix `/book`)
+
+### What to change
+The "Add Spanish reminder to phone calendar" checkbox on `/book` is currently cosmetic.
+Make it functional.
+
+### What to build
+- When the checkbox is checked and user selects a booking method, trigger a calendar
+  event using the Web Calendar API
+- Pre-fill the event with:
+  - Title: "Cita con Dra. Ana López / Appointment with Dra. Ana López"
+  - Location: "Centro Médico Salud"
+  - Reminder: 1 hour before in Spanish —
+    "Recordatorio: Cita con Dra. Ana López en 1 hora"
+- If Web Calendar API is unavailable (iOS), fall back to a downloadable `.ics` file
+- Save the reminder to localStorage under `careclarity_reminders`:
+  ```json
+  {
+    "provider": "Dra. Ana López",
+    "specialty": "Medicina General",
+    "datetime": "[ISO timestamp]",
+    "reminderSet": true
+  }
+  ```
+- Add a "Mis Recordatorios / My Reminders" list to `/settings` that reads from
+  `careclarity_reminders` and displays each saved reminder as a read-only row:
+  - "Cita con Dra. Ana López · [date]" + "Delete" button
+- Add i18n keys:
+  - `booking.reminder_set` / `booking.reminder_failed`
+  - `settings.reminders_title` / `settings.no_reminders`
+
+---
+
+## Change 2 — Consultation Transcript Clinical Metadata Filename (fix `/transcript/:id`)
+
+### What to change
+The auto-generated transcript filename currently uses only date + time.
+Update it to include clinical metadata.
+
+### What to build
+- Update the auto-generated filename format to:
+  `"[Date] · [Provider Name] · [Specialty] · #[Session ID]"`
+  Example: `"2026-03-26 · Dra. Ana López · Medicina General · #4829"`
+- Display a metadata header at the top of every transcript card:
+
+  ```
+  📅 Date:      March 26, 2026
+  👩‍⚕️ Provider:  Dra. Ana López
+  🏥 Specialty: Medicina General
+  ⏱️ Duration:  12 min
+  💬 Messages:  24
+  ```
+
+- Store this metadata in the session object in localStorage:
+  ```json
+  {
+    "id": "4829",
+    "provider": "Dra. Ana López",
+    "specialty": "Medicina General",
+    "date": "[ISO timestamp]",
+    "duration": "[seconds]",
+    "messageCount": 24,
+    "messages": []
+  }
+  ```
+- Update `storage.ts` — `saveSession()` to accept and store the new metadata fields
+- Add i18n keys:
+  - `transcript.provider` / `transcript.specialty`
+  - `transcript.duration` / `transcript.messages`
+
+---
+
+## Change 3 — Lifestyle Instructions (add to `/transcript/:id`)
+
+### What to build
+Add a new "Lifestyle Instructions / Instrucciones de Estilo de Vida" section
+at the bottom of the `/transcript/:id` post-visit summary screen.
+
+- Section title: "Instrucciones de Estilo de Vida / Lifestyle Instructions"
+- 3 placeholder instruction cards (hardcoded sample content for MVP):
+
+  **Card 1 — Diet / Dieta**
+  - Icon: 🥗
+  - Spanish: "Evite alimentos con alto contenido de sodio. Consuma más frutas
+    y verduras frescas. Limite el consumo de azúcar."
+  - English toggle: "Avoid high-sodium foods. Eat more fresh fruits and
+    vegetables. Limit sugar intake."
+
+  **Card 2 — Exercise / Ejercicio**
+  - Icon: 🏃
+  - Spanish: "Realice 30 minutos de caminata moderada al día. Evite
+    actividades de alto impacto por 2 semanas."
+  - English toggle: "Walk 30 minutes at a moderate pace daily. Avoid
+    high-impact activities for 2 weeks."
+
+  **Card 3 — Physical Therapy / Fisioterapia**
+  - Icon: 🧘
+  - Spanish: "Complete los ejercicios de estiramiento dos veces al día.
+    Asista a su cita de fisioterapia el viernes."
+  - English toggle: "Complete stretching exercises twice daily. Attend
+    your physical therapy appointment on Friday."
+
+- Each card has:
+  - "Guardar / Save" button → saves card content to localStorage
+  - "Compartir / Share" button → Web Share API
+  - Language toggle pill (ES | EN) — switches just that card's text
+- Add i18n keys:
+  - `transcript.lifestyle_title`
+  - `transcript.lifestyle_diet` / `transcript.lifestyle_exercise` / `transcript.lifestyle_pt`
+  - `transcript.lifestyle_save` / `transcript.lifestyle_share`
+
+---
+
+## Change 4 — Full Legal Onboarding + Saved to Settings
+
+### Part A — Update Onboarding Screen 3
+
+Replace the single privacy notice line with a full scrollable legal acknowledgment screen:
+
+- Screen title: "Legal & Privacy / Legal y Privacidad"
+- Scrollable area containing 4 statements (each collapsible accordion):
+
+  1. **Privacy Notice / Aviso de Privacidad**
+     "🔒 This app does not save audio recordings. Transcriptions are
+     stored only on your device."
+
+  2. **HIPAA Rights Notice / Aviso de Derechos HIPAA**
+     "You have the right to access, correct, and delete your health
+     information at any time. This app does not share your information
+     with third parties."
+
+  3. **Terms of Use / Términos de Uso**
+     "Care Clarity is a translation aid — not a medical device. Always
+     confirm important medical information directly with your provider."
+
+  4. **Data Deletion Rights / Derecho a Eliminar Datos**
+     "You may delete all your saved data at any time from the Settings
+     screen."
+
+- Single acknowledge button at bottom:
+  "Entiendo y acepto / I understand and agree"
+  - Button is DISABLED until user has scrolled to the bottom of all statements
+  - On tap → save to localStorage key `careclarity_legal`:
+    ```json
+    {
+      "privacyAccepted": true,
+      "hipaaAccepted": true,
+      "termsAccepted": true,
+      "dataRightsAccepted": true,
+      "acceptedAt": "[ISO timestamp]",
+      "acceptedLanguage": "en"
+    }
+    ```
+  - Navigate to Home
+
+### Part B — Add Legal & Consent Section to `/settings`
+
+Add a new "Legal & Consent / Legal y Consentimiento" section to the Settings screen,
+below the existing Security & Privacy section.
+
+- Section title: "Legal & Consent / Legal y Consentimiento"
+- 4 read-only rows — pull data from `careclarity_legal` in localStorage:
+
+  | Icon | Statement | Badge | Action |
+  |---|---|---|---|
+  | 📄 | Privacy Notice / Aviso de Privacidad | Accepted ✓ [date] | [View] |
+  | 🏥 | HIPAA Rights Notice / Aviso HIPAA | Accepted ✓ [date] | [View] |
+  | 📋 | Terms of Use / Términos de Uso | Accepted ✓ [date] | [View] |
+  | 🗑️ | Data Deletion Rights / Derecho a Eliminar | Accepted ✓ [date] | [View] |
+
+- "Accepted ✓" badge is green; date shown in user's current language format
+- "View" expands an inline accordion with the full text of that statement
+- Statements are READ-ONLY — no toggles or checkboxes
+- Accepted date pulled from `careclarity_legal.acceptedAt`
+- Statement text displayed in `careclarity_legal.acceptedLanguage` by default
+  with a small toggle to switch language inline
+
+- Below the 4 rows add a "Delete All My Data" button:
+  - Label: "Eliminar todos mis datos / Delete All My Data" (destructive red)
+  - On tap → show confirmation modal:
+    "¿Estás seguro? Esto eliminará todas tus sesiones, recordatorios y
+    configuraciones guardadas. / Are you sure? This will delete all your
+    sessions, reminders, and saved settings."
+  - Confirm → clear ALL localStorage keys:
+    `careclarity_sessions`, `careclarity_legal`, `careclarity_reminders`,
+    `hasCompletedOnboarding`
+  - Navigate back to onboarding Screen 1
+
+### Part C — Update `storage.ts`
+Add these helper functions:
+- `saveLegalConsent(consent)` — writes to `careclarity_legal`
+- `getLegalConsent()` — reads from `careclarity_legal`
+- `deleteAllData()` — clears all `careclarity_*` localStorage keys
+- `saveReminder(reminder)` — writes to `careclarity_reminders`
+- `getReminders()` — reads from `careclarity_reminders`
+- `deleteReminder(id)` — removes one reminder by ID
+
+### Part D — Add i18n Keys (both `en.json` and `es.json`)
+```
+legal.title
+legal.privacy_title / legal.privacy_body
+legal.hipaa_title / legal.hipaa_body
+legal.terms_title / legal.terms_body
+legal.data_rights_title / legal.data_rights_body
+legal.accept_btn / legal.scroll_to_accept
+legal.accepted_on / legal.view
+legal.delete_all / legal.delete_confirm / legal.delete_cancel
+settings.reminders_title / settings.no_reminders
+settings.legal_title
+```
+
+---
+
+## Summary of Files to Touch
+- `pages/booking.tsx` — functional calendar reminder (Change 1)
+- `pages/settings.tsx` — add Reminders list + Legal & Consent section (Change 1 + 4B)
+- `pages/transcript.tsx` — clinical metadata header + Lifestyle Instructions (Change 2 + 3)
+- `components/onboarding.tsx` — replace Screen 3 with full legal flow (Change 4A)
+- `lib/storage.ts` — new helper functions (Change 4C)
+- `i18n/index.ts` — new keys for all 4 changes (Change 4D)
+
+## Do NOT change anything else.
+All other screens, components, routes, and logic must remain exactly as they are.

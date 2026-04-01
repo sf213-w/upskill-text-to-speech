@@ -1,0 +1,1296 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://id-preview--bdcfb17c-99de-4b61-a5cb-b5e6bbaaa70c.lovable.app/wireframes.html
+Subject: =?utf-8?Q?Care=20Clarity=20=E2=80=94=20Wireframe=20Screens?=
+Date: Sun, 15 Mar 2026 11:23:14 -0400
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--RdcujUJbO9RCS2qtQfNvTRvnnzSFDb1NJENPgMNgGQ----"
+
+
+------MultipartBoundary--RdcujUJbO9RCS2qtQfNvTRvnnzSFDb1NJENPgMNgGQ----
+Content-Type: text/html
+Content-ID: <frame-C273CA39457A044EC3A9B7593B468B56@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://id-preview--bdcfb17c-99de-4b61-a5cb-b5e6bbaaa70c.lovable.app/wireframes.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-076eff03-407a-45a0-9b12-46fbbf4ea852@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-221cae26-0c55-4e6f=
+-aa5e-3cdfadbeb532@mhtml.blink" />
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Care Clarity =E2=80=94 Wireframe Screens</title>
+<link href=3D"https://fonts.googleapis.com/css2?family=3DInter:wght@400;500=
+;600;700&amp;family=3DSpace+Mono:wght@400;700&amp;display=3Dswap" rel=3D"st=
+ylesheet">
+
+
+
+<meta name=3D"twitter:image" content=3D"https://pub-bb2e103a32db4e198524a2e=
+9ed8f35b4.r2.dev/448e3e8c-f5c0-4276-936f-aefdff2ec2d1/id-preview-6819c5e7--=
+bdcfb17c-99de-4b61-a5cb-b5e6bbaaa70c.lovable.app-1773588043249.png"></head>
+<body data-new-gr-c-s-check-loaded=3D"14.1277.0" data-gr-ext-installed=3D""=
+>
+
+<h1 class=3D"page-title">Care Clarity =E2=80=94 Wireframe Screens</h1>
+<p class=3D"page-sub">iPhone mobile wireframes =C2=B7 13 screens =C2=B7 All=
+ epics</p>
+
+<div class=3D"grid">
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 1. Onboar=
+ding =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"screen-body" style=3D"display:flex;flex-direction:column;al=
+ign-items:center;justify-content:center;text-align:center;gap:16px;min-heig=
+ht:700px;">
+    <div class=3D"placeholder" style=3D"width:80px;height:80px;border-radiu=
+s:50%;"></div>
+    <div>
+      <div class=3D"fd bold" style=3D"font-size:20px;">Care Clarity</div>
+      <p class=3D"fb text-xxs" style=3D"margin-top:6px;">Navegue su salud c=
+on confianza.<br>Navigate your health with confidence.</p>
+    </div>
+    <p class=3D"fb text-xxs" style=3D"max-width:260px;">Traducci=C3=B3n en =
+tiempo real para citas m=C3=A9dicas, formularios, recetas y m=C3=A1s.</p>
+    <div style=3D"width:100%;margin-top:16px;">
+      <div style=3D"border:2px solid var(--primary);padding:12px;text-align=
+:center;" class=3D"fd bold text-xs">Comenzar =E2=86=92</div>
+    </div>
+    <div class=3D"row" style=3D"gap:6px;margin-top:8px;">
+      <div style=3D"width:8px;height:8px;border-radius:50%;background:var(-=
+-primary);"></div>
+      <div style=3D"width:8px;height:8px;border-radius:50%;background:var(-=
+-muted);"></div>
+      <div style=3D"width:8px;height:8px;border-radius:50%;background:var(-=
+-muted);"></div>
+      <div style=3D"width:8px;height:8px;border-radius:50%;background:var(-=
+-muted);"></div>
+    </div>
+  </div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">1. Onboarding =E2=80=94 Welcome</p>
+<p class=3D"screen-route">/welcome</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 2. Dashbo=
+ard =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">Dashboard</span><span class=
+=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <p class=3D"fb text-xxs mb">Hola Maria =E2=80=94 =C2=BFqu=C3=A9 necesit=
+a hoy?</p>
+    <div class=3D"card-grid">
+      <div class=3D"card-btn"><div class=3D"icon">=F0=9F=94=8D</div><div cl=
+ass=3D"lbl">Find Provider</div><div class=3D"dsc">Search Spanish-speaking p=
+roviders</div></div>
+      <div class=3D"card-btn"><div class=3D"icon">=F0=9F=93=85</div><div cl=
+ass=3D"lbl">Book Appointment</div><div class=3D"dsc">Call, form, or email b=
+ooking</div></div>
+      <div class=3D"card-btn"><div class=3D"icon">=F0=9F=93=84</div><div cl=
+ass=3D"lbl">Intake Forms</div><div class=3D"dsc">Translate &amp; complete f=
+orms</div></div>
+      <div class=3D"card-btn"><div class=3D"icon">=F0=9F=8E=A4</div><div cl=
+ass=3D"lbl">Live Translation</div><div class=3D"dsc">Real-time consultation=
+ support</div></div>
+    </div>
+    <div class=3D"fd bold text-xs mb" style=3D"margin-bottom:6px;">More Ser=
+vices</div>
+    <div class=3D"list-item"><span>=F0=9F=93=8B</span><div><div class=3D"fd=
+ bold" style=3D"font-size:11px;">Post-Visit</div><div class=3D"text-xxs">Su=
+mmaries &amp; prescriptions</div></div></div>
+    <div class=3D"list-item"><span>=F0=9F=92=8A</span><div><div class=3D"fd=
+ bold" style=3D"font-size:11px;">Pharmacy</div><div class=3D"text-xxs">Labe=
+ls, reminders, dialog</div></div></div>
+    <div class=3D"list-item"><span>=F0=9F=94=84</span><div><div class=3D"fd=
+ bold" style=3D"font-size:11px;">Referrals</div><div class=3D"text-xxs">Spe=
+cialist care loop</div></div></div>
+    <div class=3D"bx mt" style=3D"display:flex;gap:10px;align-items:center;=
+">
+      <div class=3D"placeholder" style=3D"width:40px;height:40px;border-rad=
+ius:50%;flex-shrink:0;"></div>
+      <div><div class=3D"fd bold text-xs">Maria Gonzalez</div><div class=3D=
+"text-xxs">Paciente =C2=B7 Espa=C3=B1ol</div></div>
+    </div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">2. Dashboard</p>
+<p class=3D"screen-route">/</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 3. Provid=
+er Search =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Find Provider</spa=
+n><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Find a Provider</div>
+    <div class=3D"sub">Epic 1: Provider Discovery</div>
+    <div class=3D"bx">
+      <div class=3D"fd bold text-xs mb" style=3D"margin-bottom:6px;">Descri=
+be your health concern (Spanish)</div>
+      <div class=3D"row">
+        <div class=3D"flex-1 val" style=3D"border:1px solid var(--border);p=
+adding:8px;font-size:11px;color:var(--muted-fg);">"Tengo dolor de cabeza fr=
+ecuente..."</div>
+        <div class=3D"btn-outline">=F0=9F=8E=A4 Voice</div>
+      </div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"fd bold text-xs" style=3D"margin-bottom:6px;">Filters</=
+div>
+      <div><span class=3D"chip chip-active">Idioma: Espa=C3=B1ol =E2=9C=93<=
+/span><span class=3D"chip">10 mi</span><span class=3D"chip">En red =E2=9C=
+=93</span><span class=3D"chip">Todas</span></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"fd bold text-xs" style=3D"margin-bottom:8px;">Resultado=
+s (3 proveedores)</div>
+      <div class=3D"list-item"><div class=3D"placeholder" style=3D"width:40=
+px;height:40px;flex-shrink:0;"></div><div class=3D"flex-1"><div class=3D"fd=
+ bold text-xs">Dra. Ana L=C3=B3pez</div><div class=3D"text-xxs">Medicina Ge=
+neral =C2=B7 2.3 mi</div></div><span class=3D"chip" style=3D"border-color:v=
+ar(--primary);color:var(--primary);">En red =E2=9C=93</span></div>
+      <div class=3D"list-item"><div class=3D"placeholder" style=3D"width:40=
+px;height:40px;flex-shrink:0;"></div><div class=3D"flex-1"><div class=3D"fd=
+ bold text-xs">Dr. Carlos Ruiz</div><div class=3D"text-xxs">Medicina Intern=
+a =C2=B7 4.1 mi</div></div></div>
+      <div class=3D"list-item"><div class=3D"placeholder" style=3D"width:40=
+px;height:40px;flex-shrink:0;"></div><div class=3D"flex-1"><div class=3D"fd=
+ bold text-xs">Dra. Isabel Torres</div><div class=3D"text-xxs">Medicina Fam=
+iliar =C2=B7 5.8 mi</div></div></div>
+    </div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">3. Provider Search</p>
+<p class=3D"screen-route">/provider-search</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 4. Bookin=
+g =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Book Appointment</=
+span><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Book Appointment</div>
+    <div class=3D"sub">Epic 2: Appointment Booking</div>
+    <div class=3D"bx row">
+      <div class=3D"placeholder" style=3D"width:40px;height:40px;flex-shrin=
+k:0;"></div>
+      <div><div class=3D"fd bold text-xs">Dra. Ana L=C3=B3pez</div><div cla=
+ss=3D"text-xxs">Medicina General =C2=B7 2.3 mi =C2=B7 En red</div></div>
+    </div>
+    <div class=3D"fd bold text-xs mb">Choose booking method:</div>
+    <div style=3D"display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;ma=
+rgin-bottom:12px;">
+      <div class=3D"card-btn" style=3D"text-align:center;"><div class=3D"ic=
+on">=F0=9F=93=9E</div><div class=3D"lbl">Phone Call</div><div class=3D"dsc"=
+>Real-time speech translation</div></div>
+      <div class=3D"card-btn" style=3D"text-align:center;"><div class=3D"ic=
+on">=F0=9F=93=84</div><div class=3D"lbl">Online Form</div><div class=3D"dsc=
+">Translated form fields</div></div>
+      <div class=3D"card-btn" style=3D"text-align:center;"><div class=3D"ic=
+on">=E2=9C=89=EF=B8=8F</div><div class=3D"lbl">Email</div><div class=3D"dsc=
+">Auto-translated message</div></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"fd bold text-xs" style=3D"margin-bottom:6px;">After boo=
+king:</div>
+      <div class=3D"row"><div style=3D"width:16px;height:16px;border:1px so=
+lid var(--primary);"></div><span class=3D"fb text-xs">Add Spanish reminder =
+to phone calendar</span></div>
+    </div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">4. Booking =E2=80=94 Methods</p>
+<p class=3D"screen-route">/booking</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 5. Phone =
+Booking =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Phone Booking</spa=
+n><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Phone Booking =E2=80=94 Live Translation</div>
+    <div class=3D"sub">US 2.1: Real-time call translation</div>
+    <div class=3D"bx">
+      <div class=3D"row mb"><div class=3D"fd bold text-xs flex-1">Call to: =
+Dra. Ana L=C3=B3pez</div><span class=3D"text-xxs">00:03:42</span></div>
+      <div style=3D"display:grid;grid-template-columns:1fr 1fr;gap:8px;marg=
+in-bottom:8px;">
+        <div style=3D"border:1px solid var(--border);padding:8px;"><div cla=
+ss=3D"text-xxs">ESPA=C3=91OL (You)</div><div class=3D"fb text-xs">"Quisiera=
+ hacer una cita para un examen general."</div></div>
+        <div style=3D"border:1px solid var(--border);padding:8px;"><div cla=
+ss=3D"text-xxs">ENGLISH (Office)</div><div class=3D"fb text-xs">"I would li=
+ke to make an appointment for a general exam."</div></div>
+      </div>
+      <div style=3D"display:grid;grid-template-columns:1fr 1fr;gap:8px;marg=
+in-bottom:8px;">
+        <div style=3D"border:1px solid var(--border);padding:8px;"><div cla=
+ss=3D"text-xxs">ENGLISH (Office)</div><div class=3D"fb text-xs">"We have av=
+ailability next Tuesday at 2 PM."</div></div>
+        <div style=3D"border:1px solid var(--border);padding:8px;"><div cla=
+ss=3D"text-xxs">ESPA=C3=91OL (Translated)</div><div class=3D"fb text-xs">"T=
+enemos disponibilidad el pr=C3=B3ximo martes a las 2 PM."</div></div>
+      </div>
+      <div class=3D"row"><button class=3D"btn-destructive">End Call</button=
+><button class=3D"btn-outline">Mute</button></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"fd bold text-xs">Transcript saved on device =E2=9C=93</=
+div>
+      <div class=3D"text-xxs">Latency: &lt;2s =C2=B7 Bidirectional ES=E2=86=
+=94EN</div>
+      <button class=3D"btn-primary mt">Continue to Intake Forms =E2=86=92</=
+button>
+    </div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">5. Phone Booking =E2=80=94 Call</p>
+<p class=3D"screen-route">/booking/call</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 6. Form B=
+ooking =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Form Booking</span=
+><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Online Form Booking</div>
+    <div class=3D"sub">US 2.2: Translated booking forms</div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Formulario de Cita (Translated)</div>
+      <div class=3D"field"><label>Nombre completo</label><div class=3D"val"=
+>Maria Gonzalez</div></div>
+      <div class=3D"field"><label>Fecha de nacimiento</label><div class=3D"=
+val">03/15/1981</div></div>
+      <div class=3D"field"><label>N=C3=BAmero de seguro</label><div class=
+=3D"val">INS-4829-XXXX</div></div>
+      <div class=3D"field"><label>Motivo de la visita</label><div class=3D"=
+val">Examen general preventivo</div></div>
+      <div class=3D"field"><label>Fecha preferida</label><div class=3D"val"=
+>Martes, 22 de Abril</div></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"fd bold text-xs" style=3D"margin-bottom:4px;">Preview (=
+English =E2=80=94 sent to office):</div>
+      <div style=3D"background:var(--muted);padding:8px;font-size:10px;colo=
+r:var(--muted-fg);">Full Name: Maria Gonzalez =C2=B7 DOB: 03/15/1981 =C2=B7=
+ Insurance: INS-4829-XXXX =C2=B7 Reason: Preventive general exam</div>
+    </div>
+    <div class=3D"row"><button class=3D"btn-primary">Enviar / Submit =E2=86=
+=92</button><button class=3D"btn-outline">=E2=86=90 Back</button></div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">6. Form Booking</p>
+<p class=3D"screen-route">/booking/form</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 7. Email =
+Booking =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Email Booking</spa=
+n><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Email Booking</div>
+    <div class=3D"sub">US 2.3: Auto-translated email</div>
+    <div class=3D"bx">
+      <div class=3D"text-xxs mb">YOUR MESSAGE (Spanish)</div>
+      <div style=3D"border:1px solid var(--border);padding:10px;font-size:1=
+1px;min-height:100px;">Estimada Dra. L=C3=B3pez, me gustar=C3=ADa agendar u=
+na cita para un examen general. Tengo seguro m=C3=A9dico y hablo espa=C3=B1=
+ol. =C2=BFTiene disponibilidad la pr=C3=B3xima semana? Gracias, Maria Gonza=
+lez</div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"text-xxs mb">TRANSLATED (English =E2=80=94 sent)</div>
+      <div style=3D"background:var(--muted);border:1px solid var(--border);=
+padding:10px;font-size:11px;min-height:100px;">Dear Dr. L=C3=B3pez, I would=
+ like to schedule an appointment for a general exam. I have health insuranc=
+e and I speak Spanish. Do you have availability next week? Thank you, Maria=
+ Gonzalez</div>
+    </div>
+    <div class=3D"row"><button class=3D"btn-primary">Send Email =E2=86=92</=
+button><button class=3D"btn-outline">=E2=86=90 Back</button></div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">7. Email Booking</p>
+<p class=3D"screen-route">/booking/email</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 8. Intake=
+ Forms =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Intake Forms</span=
+><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Intake &amp; Admin Forms</div>
+    <div class=3D"sub">Epic 3: Complete admin tasks in Spanish</div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Digital Intake Form (Translated)</div>
+      <div class=3D"field"><label>Nombre completo</label><div class=3D"val =
+row"><span class=3D"flex-1">Maria Gonzalez</span><span style=3D"color:var(-=
+-primary);font-size:10px;">Auto =E2=9C=93</span></div></div>
+      <div class=3D"field"><label>Fecha de nacimiento</label><div class=3D"=
+val row"><span class=3D"flex-1">15/03/1981</span><span style=3D"color:var(-=
+-primary);font-size:10px;">Auto =E2=9C=93</span></div></div>
+      <div class=3D"field"><label>Alergias</label><div class=3D"val" style=
+=3D"color:var(--muted-fg);font-style:italic;">Enter / Ingresar...</div></di=
+v>
+      <div class=3D"field"><label>Medicamentos actuales</label><div class=
+=3D"val" style=3D"color:var(--muted-fg);font-style:italic;">Enter / Ingresa=
+r...</div></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Paper Form Translation</div>
+      <div class=3D"text-xxs mb">US 3.2: Photo =E2=86=92 OCR =E2=86=92 Span=
+ish overlay</div>
+      <button class=3D"btn-outline">=F0=9F=93=B7 Capture Paper Form</button=
+>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Aviso de Privacidad (HIPAA)</div>
+      <div style=3D"border:1px solid var(--border);padding:8px;font-size:10=
+px;color:var(--muted-fg);height:60px;overflow:hidden;">Este aviso describe =
+c=C3=B3mo se puede usar y divulgar su informaci=C3=B3n m=C3=A9dica...</div>
+      <div class=3D"row mt"><div style=3D"width:14px;height:14px;border:1px=
+ solid var(--primary);display:flex;align-items:center;justify-content:cente=
+r;color:var(--primary);font-size:9px;">=E2=9C=93</div><span class=3D"fb tex=
+t-xs">He le=C3=ADdo y acepto</span></div>
+    </div>
+    <button class=3D"btn-primary">Continue to Consultation =E2=86=92</butto=
+n>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">8. Intake Forms</p>
+<p class=3D"screen-route">/intake</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 9. Camera=
+ / OCR =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Camera Translate</=
+span><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Camera =E2=80=94 Paper Form</div>
+    <div class=3D"sub">US 3.2: OCR + Spanish overlay</div>
+    <div class=3D"bx">
+      <div class=3D"text-xxs mb">CAPTURED IMAGE</div>
+      <div class=3D"placeholder" style=3D"height:160px;margin-bottom:8px;">=
+</div>
+      <div class=3D"text-xxs">Paper form captured via camera</div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"text-xxs mb">SPANISH OVERLAY (OCR =E2=86=92 Translated)=
+</div>
+      <div style=3D"font-size:11px;line-height:1.8;">
+        <strong>Nombre del paciente:</strong> ___________<br>
+        <strong>Fecha de nacimiento:</strong> ___________<br>
+        <strong>Alergias conocidas:</strong> ___________<br>
+        <strong>Medicamentos:</strong> ___________<br>
+        <strong>Cirug=C3=ADas previas:</strong> ___________
+      </div>
+    </div>
+    <div class=3D"text-xxs mb">Processing: &lt;5 seconds</div>
+    <div class=3D"row"><button class=3D"btn-primary">Continue =E2=86=92</bu=
+tton><button class=3D"btn-outline">=E2=86=90 Back</button></div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">9. Camera =E2=80=94 OCR Translation</p>
+<p class=3D"screen-route">/intake/camera</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 10. Consu=
+ltation =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Live Translation</=
+span><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Live Translation =E2=80=94 Consultation</div>
+    <div class=3D"sub">Epic 4: Real-time bidirectional speech</div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Recording Consent (US 4.6)</div>
+      <div class=3D"row"><button class=3D"btn-primary">Doctor Consents =E2=
+=9C=93</button><button class=3D"btn-outline">Declines</button></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"row mb"><div class=3D"dot-pulse"></div><span class=3D"f=
+d bold text-xs" style=3D"margin-left:6px;">Active Session</span><span class=
+=3D"text-xxs" style=3D"margin-left:auto;">00:12:34</span></div>
+      <div class=3D"msg"><div class=3D"msg-speaker">Patient (ES)</div><div =
+class=3D"msg-text">He tenido dolores de cabeza frecuentes por dos semanas.<=
+/div><div class=3D"msg-trans">=E2=86=92 I have had frequent headaches for t=
+wo weeks.</div></div>
+      <div class=3D"msg"><div class=3D"msg-speaker">Doctor (EN)</div><div c=
+lass=3D"msg-text">Do you experience any visual disturbances?</div><div clas=
+s=3D"msg-trans">=E2=86=92 =C2=BFExperimenta alguna alteraci=C3=B3n visual?<=
+/div></div>
+      <div class=3D"msg" style=3D"border-color:var(--primary);"><div class=
+=3D"msg-speaker">Patient (ES) =E2=98=85</div><div class=3D"msg-text">S=C3=
+=AD, a veces veo luces brillantes antes del dolor.</div><div class=3D"msg-t=
+rans">=E2=86=92 Yes, sometimes I see bright lights before the pain.</div></=
+div>
+      <div class=3D"row"><button class=3D"btn-primary">=F0=9F=8E=A4 Listeni=
+ng...</button><button class=3D"btn-outline">=F0=9F=94=96 Bookmark</button><=
+span class=3D"text-xxs">Latency: &lt;2s</span></div>
+    </div>
+    <button class=3D"btn-destructive">End Session =E2=86=92 Post-Visit</but=
+ton>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">10. Live Consultation</p>
+<p class=3D"screen-route">/consultation</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 11. Post-=
+Visit =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Post-Visit Summary=
+</span><span class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Post-Visit Summary</div>
+    <div class=3D"sub">Epic 5: Understand recommendations in Spanish</div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Resumen de Visita =E2=80=94 Dra. Ana L=C3=B3p=
+ez</div>
+      <div class=3D"text-xxs mb">22 de Abril, 2026 =C2=B7 Auto-generated fr=
+om transcript</div>
+      <div class=3D"bx" style=3D"margin-bottom:6px;"><div class=3D"text-xxs=
+">RECETAS</div><div class=3D"fb text-xs">Sumatript=C3=A1n 50mg =E2=80=94 to=
+mar al inicio de migra=C3=B1a</div><div class=3D"fb text-xs">Ibuprofeno 400=
+mg =E2=80=94 cada 8 horas</div></div>
+      <div class=3D"bx" style=3D"margin-bottom:6px;"><div class=3D"text-xxs=
+">REFERIDOS</div><div class=3D"fb text-xs">Neurolog=C3=ADa =E2=80=94 Dr. Fe=
+rn=C3=A1ndez</div><div class=3D"fb text-xs">Examen de vista =E2=80=94 =C3=
+=93ptica Centro</div></div>
+      <div class=3D"bx"><div class=3D"text-xxs">ESTILO DE VIDA</div><div cl=
+ass=3D"fb text-xs">Reducir cafe=C3=ADna</div><div class=3D"fb text-xs">Mant=
+ener diario de dolores de cabeza</div></div>
+      <div class=3D"row mt"><button class=3D"btn-outline">=F0=9F=92=BE Save=
+</button><button class=3D"btn-outline">=F0=9F=94=97 Share</button></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Translate Prescription</div>
+      <div class=3D"row"><div class=3D"placeholder" style=3D"width:80px;hei=
+ght:50px;flex-shrink:0;"></div><div class=3D"flex-1"><div class=3D"text-xxs=
+">TRANSLATED</div><div class=3D"fb text-xs">Sumatript=C3=A1n 50mg =E2=80=94=
+ Tomar 1 tableta al inicio del dolor de cabeza.</div></div></div>
+    </div>
+    <div class=3D"row"><button class=3D"btn-primary">Go to Pharmacy =E2=86=
+=92</button><button class=3D"btn-outline">View Referrals =E2=86=92</button>=
+</div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">11. Post-Visit Summary</p>
+<p class=3D"screen-route">/post-visit</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 12. Pharm=
+acy =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Pharmacy</span><sp=
+an class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Pharmacy Management</div>
+    <div class=3D"sub">Epic 6: Use medication safely without English</div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Prescription Label Translation</div>
+      <div class=3D"row">
+        <div><div class=3D"placeholder" style=3D"width:100px;height:60px;ma=
+rgin-bottom:4px;"></div><button class=3D"btn-outline" style=3D"width:100%;f=
+ont-size:9px;">=F0=9F=93=B7 Scan Label</button></div>
+        <div class=3D"flex-1" style=3D"border:1px solid var(--border);paddi=
+ng:8px;">
+          <div class=3D"text-xxs">TRANSLATED LABEL</div>
+          <div class=3D"fb bold text-xs">Sumatript=C3=A1n 50mg</div>
+          <div class=3D"fb text-xs">Tomar 1 tableta al inicio de migra=C3=
+=B1a</div>
+          <div class=3D"fb text-xs text-dest">=E2=9A=A0 No exceder 200mg en=
+ 24 horas</div>
+        </div>
+      </div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Pharmacist Dialog Support</div>
+      <div style=3D"border:1px solid var(--border);padding:8px;margin-botto=
+m:6px;"><div class=3D"text-xxs">PHARMACIST (EN)</div><div class=3D"fb text-=
+xs">"Take this with food to avoid stomach upset."</div><div class=3D"text-x=
+xs">=E2=86=92 "Tome esto con comida para evitar malestar estomacal."</div><=
+/div>
+      <button class=3D"btn-outline">=F0=9F=8E=A4 Start Dialog Translation</=
+button>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Medication Reminders</div>
+      <div class=3D"fb text-xs">=F0=9F=94=94 Sumatript=C3=A1n =E2=80=94 Al =
+inicio de dolor de cabeza</div>
+      <div class=3D"text-xxs">Ibuprofeno =E2=80=94 Cada 8 horas (8:00, 16:0=
+0, 00:00)</div>
+    </div>
+    <button class=3D"btn-primary">Continue to Referrals =E2=86=92</button>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">12. Pharmacy</p>
+<p class=3D"screen-route">/pharmacy</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 13. Refer=
+rals =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Referrals</span><s=
+pan class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Specialist Referrals</div>
+    <div class=3D"sub">Epic 7: Seamless transition to specialist care</div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Active Referrals</div>
+      <div style=3D"border:1px solid var(--border);padding:10px;margin-bott=
+om:6px;">
+        <div class=3D"row"><div class=3D"flex-1"><div class=3D"fd bold text=
+-xs">Dr. Fern=C3=A1ndez</div><div class=3D"text-xxs">Neurolog=C3=ADa =C2=B7=
+ Referido por Dra. L=C3=B3pez</div></div><span class=3D"chip">Pending booki=
+ng</span></div>
+        <div class=3D"row mt"><button class=3D"btn-outline" style=3D"font-s=
+ize:9px;">Search &amp; Book</button><button class=3D"btn-outline" style=3D"=
+font-size:9px;">=F0=9F=94=97 Share History</button><button class=3D"btn-out=
+line" style=3D"font-size:9px;">Intake Forms</button></div>
+      </div>
+      <div style=3D"border:1px solid var(--border);padding:10px;">
+        <div class=3D"row"><div class=3D"flex-1"><div class=3D"fd bold text=
+-xs">=C3=93ptica Centro</div><div class=3D"text-xxs">Examen de vista =C2=B7=
+ Referido por Dra. L=C3=B3pez</div></div><span class=3D"chip" style=3D"bord=
+er-color:var(--primary);color:var(--primary);">Booked =E2=80=94 29 Abril</s=
+pan></div>
+      </div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Referral Flow</div>
+      <div style=3D"display:flex;flex-wrap:wrap;gap:4px;align-items:center;=
+font-size:10px;color:var(--muted-fg);">
+        <span class=3D"chip">Post-Visit</span>=E2=86=92<span class=3D"chip"=
+>Referral Saved</span>=E2=86=92<span class=3D"chip">Search</span>=E2=86=92<=
+span class=3D"chip">Book</span>=E2=86=92<span class=3D"chip">Intake</span>=
+=E2=86=92<span class=3D"chip">Consult</span>
+      </div>
+    </div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">13. Referrals</p>
+<p class=3D"screen-route">/referrals</p>
+</div>
+
+<!-- =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D 14. Setti=
+ngs =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->
+<div>
+<div class=3D"phone-frame">
+  <div class=3D"status-bar"><span class=3D"time">9:41</span><div class=3D"b=
+attery"></div></div>
+  <div class=3D"nav-bar"><span class=3D"title">=E2=86=90 Settings</span><sp=
+an class=3D"lang">=F0=9F=8C=90 ES / EN</span></div>
+  <div class=3D"screen-body">
+    <div class=3D"h1w">Settings</div>
+    <div class=3D"sub">Epic 8: App Foundation &amp; Language</div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Language / Idioma</div>
+      <div class=3D"row"><button class=3D"btn-primary">Espa=C3=B1ol</button=
+><button class=3D"btn-outline">English</button></div>
+      <div class=3D"text-xxs mt">Auto-detected from device.</div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">User Profile</div>
+      <div class=3D"field"><label>Nombre</label><div class=3D"val">Maria Go=
+nzalez</div></div>
+      <div class=3D"field"><label>Fecha de nacimiento</label><div class=3D"=
+val">15/03/1981</div></div>
+      <div class=3D"field"><label>ID de seguro</label><div class=3D"val">IN=
+S-4829-XXXX</div></div>
+      <div class=3D"field"><label>Tel=C3=A9fono</label><div class=3D"val">(=
+555) 987-6543</div></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Security &amp; Privacy</div>
+      <div class=3D"list-item"><span class=3D"fb text-xs flex-1">Biometric =
+Lock</span><div class=3D"toggle"></div></div>
+      <div class=3D"list-item"><span class=3D"fb text-xs flex-1">Data Encry=
+ption</span><span style=3D"color:var(--primary);font-size:10px;">Active =E2=
+=9C=93</span></div>
+      <div class=3D"list-item"><span class=3D"fb text-xs flex-1">Offline Mo=
+de</span><div class=3D"toggle"></div></div>
+    </div>
+    <div class=3D"bx">
+      <div class=3D"bx-title">Offline Features</div>
+      <div class=3D"fb text-xs" style=3D"line-height:1.8;">=E2=9C=93 Transc=
+ripts &amp; documents<br>=E2=9C=93 Medication reminders<br>=E2=9C=93 Saved =
+translations<br>=E2=9C=97 Live translation (requires connection)<br>=E2=9C=
+=97 Provider search (requires connection)</div>
+    </div>
+  </div>
+  <div class=3D"bottom-nav"><span>=F0=9F=8F=A0 Home</span><span>=F0=9F=94=
+=8D Search</span><span>=F0=9F=93=85 Book</span><span>=F0=9F=8E=A4 Translate=
+</span><span>=E2=9A=99 Settings</span></div>
+  <div class=3D"home-ind"><div></div></div>
+</div>
+<p class=3D"screen-label">14. Settings</p>
+<p class=3D"screen-route">/settings</p>
+</div>
+
+</div><!-- /grid -->
+
+<p style=3D"text-align:center;margin-top:40px;font-size:11px;color:var(--mu=
+ted-fg);">Care Clarity =C2=B7 14 wireframe screens =C2=B7 Generated March 2=
+026</p>
+
+
+<aside id=3D"lovable-badge" role=3D"complementary" dir=3D"ltr" lang=3D"en" =
+aria-label=3D"Edit with Lovable">
+	<a id=3D"lovable-badge-cta" target=3D"_blank" href=3D"https://lovable.dev/=
+projects/bdcfb17c-99de-4b61-a5cb-b5e6bbaaa70c?utm_source=3Dlovable-badge" r=
+el=3D"noopener" aria-label=3D"Edit with Lovable">
+		<span id=3D"lovable-badge-text">Edit with</span>
+		<svg xmlns=3D"http://www.w3.org/2000/svg" width=3D"52" height=3D"16" fill=
+=3D"none" viewBox=3D"0 0 52 16">
+  <path fill=3D"#FCFBF8" fill-rule=3D"evenodd" d=3D"M20.318 5.25c.643 0 1.2=
+06.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1=
+.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.2=
+08-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.8=
+12s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 =
+1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295=
+-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.2=
+2.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.1=
+53-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.6=
+1 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 =
+.29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.6=
+84 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-=
+.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 =
+0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.3=
+24.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 =
+.288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.2=
+7c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.=
+676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.=
+954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.17=
+8l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.08=
+4.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282=
+.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.=
+349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.=
+412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 =
+1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.=
+062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3=
+h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3=
+.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.1=
+97.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099=
+-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.6=
+94a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.26=
+2.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.=
+51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.3=
+19 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.48=
+5 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-=
+.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0=
+-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.=
+678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.0=
+45 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0=
+-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule=3D"evenodd"></path>
+  <path fill=3D"#FCFBF8" d=3D"m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.=
+07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418=
+ 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"></path>
+  <path fill=3D"url(#a)" fill-rule=3D"evenodd" d=3D"M2.7 3c1.492 0 2.7 1.19=
+2 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4=
+.193 1.209 3 2.7 3Z" clip-rule=3D"evenodd"></path>
+  <defs>
+    <radialGradient id=3D"a" cx=3D"0" cy=3D"0" r=3D"1" gradientTransform=3D=
+"matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits=3D"us=
+erSpaceOnUse">
+      <stop offset=3D".106" stop-color=3D"#FE7B02"></stop>
+      <stop offset=3D".394" stop-color=3D"#FE3F21"></stop>
+      <stop offset=3D".608" stop-color=3D"#F858BC"></stop>
+      <stop offset=3D".929" stop-color=3D"#575ECF"></stop>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+=09
+	<span id=3D"lovable-badge-divider" aria-hidden=3D"true"></span>
+=09
+	<button id=3D"lovable-badge-close" aria-label=3D"Dismiss" title=3D"Dismiss=
+" type=3D"button">
+		<svg xmlns=3D"http://www.w3.org/2000/svg" width=3D"16" height=3D"16" fill=
+=3D"none" viewBox=3D"0 0 16 16" aria-hidden=3D"true">
+			<path d=3D"M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 =
+1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a=
+.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"></path>
+		</svg>
+	</button>
+</aside>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root=3D"true"><=
+template shadowmode=3D"open"><div aria-label=3D"grammarly-integration" role=
+=3D"group" tabindex=3D"-1" class=3D"grammarly-desktop-integration" data-con=
+tent=3D"{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;=
+isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integrati=
+on></html>
+------MultipartBoundary--RdcujUJbO9RCS2qtQfNvTRvnnzSFDb1NJENPgMNgGQ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301,=
+ U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, =
+U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+=
+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0=
+-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329,=
+ U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFF=
+D; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301,=
+ U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, =
+U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+=
+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0=
+-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329,=
+ U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFF=
+D; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301,=
+ U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, =
+U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+=
+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0=
+-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329,=
+ U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFF=
+D; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++1F00-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301,=
+ U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2") format("woff2"); unicode-range: U=
++100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, =
+U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+=
+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 700; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2") format("woff2"); unicode-range: U+0=
+-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329,=
+ U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFF=
+D; }
+
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 40=
+0; font-display: swap; src: url("https://fonts.gstatic.com/s/spacemono/v17/=
+i7dPIFZifjKcF5UAWdDRYE58RXi4EwSsbg.woff2") format("woff2"); unicode-range: =
+U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301=
+, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 40=
+0; font-display: swap; src: url("https://fonts.gstatic.com/s/spacemono/v17/=
+i7dPIFZifjKcF5UAWdDRYE98RXi4EwSsbg.woff2") format("woff2"); unicode-range: =
+U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329,=
+ U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U=
++2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 40=
+0; font-display: swap; src: url("https://fonts.gstatic.com/s/spacemono/v17/=
+i7dPIFZifjKcF5UAWdDRYEF8RXi4EwQ.woff2") format("woff2"); unicode-range: U+0=
+-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329,=
+ U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFF=
+D; }
+
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 70=
+0; font-display: swap; src: url("https://fonts.gstatic.com/s/spacemono/v17/=
+i7dMIFZifjKcF5UAWdDRaPpZUFqaHi6WZ3S_Yg.woff2") format("woff2"); unicode-ran=
+ge: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300=
+-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 70=
+0; font-display: swap; src: url("https://fonts.gstatic.com/s/spacemono/v17/=
+i7dMIFZifjKcF5UAWdDRaPpZUFuaHi6WZ3S_Yg.woff2") format("woff2"); unicode-ran=
+ge: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+=
+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C=
+0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 70=
+0; font-display: swap; src: url("https://fonts.gstatic.com/s/spacemono/v17/=
+i7dMIFZifjKcF5UAWdDRaPpZUFWaHi6WZ3Q.woff2") format("woff2"); unicode-range:=
+ U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+=
+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U=
++FFFD; }
+------MultipartBoundary--RdcujUJbO9RCS2qtQfNvTRvnnzSFDb1NJENPgMNgGQ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-221cae26-0c55-4e6f-aa5e-3cdfadbeb532@mhtml.blink
+
+@charset "utf-8";
+
+@font-face { font-family: CameraPlainVariable; src: url("https://cdn.gpteng=
+.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2") format("woff2"); font-=
+weight: 100 900; font-style: normal; font-display: swap; }
+
+#lovable-badge { --badge-bg: #1b1b1b; --badge-text: #c5c1b9; --badge-text-h=
+over: #dcdad5; --badge-radius: 6px; --badge-padding: 8px; --badge-gap: 6px;=
+ --badge-shadow: 0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08); --badge-transition-duration: 0.2s;=
+ --badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1); --focus-color: =
+#575ECF; --focus-offset: 2px; --focus-width: 2px; position: fixed; bottom: =
+12px; right: 12px; height: 24px; display: flex; align-items: center; z-inde=
+x: 1000000; background-color: var(--badge-bg); color: var(--badge-text); bo=
+rder-radius: var(--badge-radius); box-shadow: var(--badge-shadow); font-siz=
+e: 12px; font-family: CameraPlainVariable, "CameraPlainVariable Fallback", =
+-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; transfor=
+m: translateZ(0px); will-change: transform, opacity; font-weight: 400 !impo=
+rtant; text-transform: none !important; font-feature-settings: normal !impo=
+rtant; }
+
+#lovable-badge-cta { display: flex; align-items: center; gap: var(--badge-g=
+ap); padding: 0 var(--badge-padding); height: 100%; color: inherit; text-de=
+coration: none; white-space: nowrap; border-radius: var(--badge-radius) 0 0=
+ var(--badge-radius); transition: background-color var(--badge-transition-d=
+uration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease; }
+
+#lovable-badge-cta:hover { background: rgba(255, 255, 255, 0.04); color: va=
+r(--badge-text-hover); }
+
+#lovable-badge-cta:active { transform: scale(0.98); }
+
+#lovable-badge-cta:focus { outline: none; }
+
+#lovable-badge-cta:focus-visible { outline: var(--focus-width) solid var(--=
+focus-color); outline-offset: var(--focus-offset); z-index: 1; }
+
+#lovable-badge-text { line-height: 1; }
+
+#lovable-badge-divider { width: 1px; height: 24px; background-color: rgba(2=
+55, 255, 255, 0.04); flex-shrink: 0; }
+
+#lovable-badge-close { width: 24px; height: 24px; min-width: 24px; min-heig=
+ht: 24px; cursor: pointer; background: none; border: none; padding: 0px; di=
+splay: flex; align-items: center; justify-content: center; border-radius: 0=
+ var(--badge-radius) var(--badge-radius) 0; flex-shrink: 0; transition: bac=
+kground-color var(--badge-transition-duration) ease,
+			transform 0.1s ease; }
+
+#lovable-badge-close:hover { background: rgba(255, 255, 255, 0.04); }
+
+#lovable-badge-close:active { transform: scale(0.92); }
+
+#lovable-badge-close:focus { outline: none; }
+
+#lovable-badge-close:focus-visible { outline: var(--focus-width) solid var(=
+--focus-color); outline-offset: calc(var(--focus-offset) * -1); z-index: 1;=
+ }
+
+#lovable-badge-close svg path { fill: var(--badge-text); transition: fill v=
+ar(--badge-transition-duration) ease; }
+
+#lovable-badge-close:hover svg path { fill: var(--badge-text-hover); }
+
+@media (prefers-reduced-motion: reduce) {
+  #lovable-badge-cta, #lovable-badge-close, #lovable-badge-close svg path {=
+ transition: none; }
+  #lovable-badge-cta:active, #lovable-badge-close:active { transform: none;=
+ }
+}
+
+@media (prefers-contrast: high) {
+  #lovable-badge { --badge-bg: #000; --badge-text: #fff; --badge-text-hover=
+: #fff; border: 2px solid currentcolor; }
+  #lovable-badge-cta:focus-visible, #lovable-badge-close:focus-visible { ou=
+tline-width: 3px; }
+}
+------MultipartBoundary--RdcujUJbO9RCS2qtQfNvTRvnnzSFDb1NJENPgMNgGQ----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-076eff03-407a-45a0-9b12-46fbbf4ea852@mhtml.blink
+
+@charset "utf-8";
+
+:root { --bg: #fff; --fg: #2b2f38; --primary: #3b82f6; --primary-fg: #fff; =
+--muted: #f3f4f6; --muted-fg: #6b7280; --border: #c5c9d0; --destructive: #e=
+f4444; --wire-stroke: #8b919d; --wire-fill: #f3f4f6; --radius: 2px; }
+
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+
+body { background: rgb(229, 231, 235); font-family: "Space Mono", monospace=
+; color: var(--fg); padding: 40px 20px; }
+
+h1.page-title { font-family: Inter, sans-serif; font-size: 28px; font-weigh=
+t: 700; text-align: center; margin-bottom: 8px; }
+
+p.page-sub { text-align: center; font-size: 12px; color: var(--muted-fg); m=
+argin-bottom: 40px; }
+
+.grid { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;=
+ }
+
+.phone-frame { width: 390px; background: var(--bg); border: 2px solid var(-=
+-border); border-radius: 40px; overflow: hidden; flex-shrink: 0; }
+
+.status-bar { height: 44px; display: flex; align-items: flex-end; justify-c=
+ontent: space-between; padding: 0px 24px 4px; }
+
+.status-bar .time { font-family: "Space Mono", monospace; font-size: 11px; =
+font-weight: 700; }
+
+.status-bar .battery { width: 16px; height: 10px; border: 1px solid rgba(0,=
+ 0, 0, 0.3); border-radius: 2px; position: relative; }
+
+.status-bar .battery::after { content: ""; position: absolute; inset: 1px 2=
+px 1px 1px; background: rgba(0, 0, 0, 0.3); border-radius: 1px; }
+
+.nav-bar { height: 44px; border-bottom: 1px solid var(--border); display: f=
+lex; align-items: center; justify-content: space-between; padding: 0px 16px=
+; }
+
+.nav-bar .title { font-family: Inter, sans-serif; font-size: 14px; font-wei=
+ght: 700; }
+
+.nav-bar .lang { font-size: 10px; border: 1px solid var(--border); padding:=
+ 2px 8px; border-radius: var(--radius); }
+
+.screen-body { padding: 16px; min-height: 600px; overflow: hidden; }
+
+.bottom-nav { height: 56px; border-top: 1px solid var(--border); display: f=
+lex; align-items: center; justify-content: space-around; }
+
+.bottom-nav span { font-size: 9px; color: var(--muted-fg); text-align: cent=
+er; }
+
+.home-ind { height: 32px; display: flex; justify-content: center; align-ite=
+ms: center; }
+
+.home-ind div { width: 134px; height: 5px; border-radius: 3px; background: =
+rgba(0, 0, 0, 0.15); }
+
+.screen-label { font-family: Inter, sans-serif; font-size: 13px; font-weigh=
+t: 700; text-align: center; margin-top: 12px; margin-bottom: 4px; color: va=
+r(--fg); }
+
+.screen-route { font-size: 10px; text-align: center; color: var(--muted-fg)=
+; margin-bottom: 0px; }
+
+.fd { font-family: Inter, sans-serif; }
+
+.fb { font-family: "Space Mono", monospace; }
+
+.bx { border: 1px solid var(--border); padding: 12px; margin-bottom: 12px; =
+border-radius: var(--radius); }
+
+.bx-title { font-family: Inter, sans-serif; font-size: 13px; font-weight: 7=
+00; margin-bottom: 8px; }
+
+.bx-sub { font-size: 10px; color: var(--muted-fg); margin-bottom: 8px; }
+
+.h1w { font-family: Inter, sans-serif; font-size: 18px; font-weight: 700; m=
+argin-bottom: 4px; }
+
+.sub { font-size: 10px; color: var(--muted-fg); margin-bottom: 16px; }
+
+.btn-primary { background: var(--primary); color: var(--primary-fg); border=
+: none; padding: 8px 16px; font-size: 11px; font-family: "Space Mono", mono=
+space; border-radius: var(--radius); }
+
+.btn-outline { border: 1px solid var(--border); background: var(--bg); padd=
+ing: 8px 16px; font-size: 11px; font-family: "Space Mono", monospace; borde=
+r-radius: var(--radius); }
+
+.btn-destructive { background: var(--destructive); color: rgb(255, 255, 255=
+); border: none; padding: 8px 16px; font-size: 11px; font-family: "Space Mo=
+no", monospace; border-radius: var(--radius); }
+
+.placeholder { border: 1px dashed var(--wire-stroke); background: var(--wir=
+e-fill); position: relative; overflow: hidden; }
+
+.placeholder::before, .placeholder::after { content: ""; position: absolute=
+; background: var(--wire-stroke); height: 1px; width: 141%; top: 50%; left:=
+ 50%; }
+
+.placeholder::before { transform: translate(-50%, -50%) rotate(45deg); }
+
+.placeholder::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+.chip { display: inline-block; border: 1px solid var(--border); padding: 2p=
+x 10px; font-size: 10px; border-radius: var(--radius); margin-right: 6px; m=
+argin-bottom: 4px; }
+
+.chip-active { background: var(--primary); color: var(--primary-fg); border=
+-color: var(--primary); }
+
+.field { margin-bottom: 8px; }
+
+.field label { display: block; font-size: 10px; color: var(--muted-fg); mar=
+gin-bottom: 2px; }
+
+.field .val { border: 1px solid var(--border); padding: 6px 8px; font-size:=
+ 11px; border-radius: var(--radius); }
+
+.row { display: flex; gap: 8px; align-items: center; }
+
+.flex-1 { flex: 1 1 0%; }
+
+.mb { margin-bottom: 12px; }
+
+.mt { margin-top: 12px; }
+
+.text-xs { font-size: 11px; }
+
+.text-xxs { font-size: 10px; color: var(--muted-fg); }
+
+.text-dest { color: var(--destructive); }
+
+.bold { font-weight: 700; }
+
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margi=
+n-bottom: 16px; }
+
+.card-btn { border: 1px solid var(--border); padding: 12px; text-align: lef=
+t; border-radius: var(--radius); }
+
+.card-btn .icon { color: var(--muted-fg); margin-bottom: 6px; font-size: 16=
+px; }
+
+.card-btn .lbl { font-family: Inter, sans-serif; font-size: 11px; font-weig=
+ht: 700; }
+
+.card-btn .dsc { font-size: 9px; color: var(--muted-fg); margin-top: 2px; }
+
+.list-item { border: 1px solid var(--border); padding: 10px; display: flex;=
+ gap: 10px; align-items: center; margin-bottom: 6px; border-radius: var(--r=
+adius); }
+
+.dot-pulse { width: 10px; height: 10px; background: var(--destructive); bor=
+der-radius: 50%; display: inline-block; }
+
+.msg { border: 1px solid var(--border); padding: 10px; margin-bottom: 8px; =
+border-radius: var(--radius); }
+
+.msg-speaker { font-size: 9px; color: var(--muted-fg); margin-bottom: 2px; =
+}
+
+.msg-text { font-size: 11px; }
+
+.msg-trans { font-size: 10px; color: var(--muted-fg); margin-top: 2px; }
+
+.toggle { width: 32px; height: 16px; border: 1px solid var(--primary); back=
+ground: var(--primary); border-radius: 8px; }
+------MultipartBoundary--RdcujUJbO9RCS2qtQfNvTRvnnzSFDb1NJENPgMNgGQ------

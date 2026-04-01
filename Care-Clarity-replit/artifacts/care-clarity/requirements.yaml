@@ -1,0 +1,15 @@
+packages:
+  "i18next": "Core internationalization library"
+  "react-i18next": "React bindings for i18next"
+  "framer-motion": "Smooth animations for onboarding and active listening states"
+  "date-fns": "Human-readable date formatting for session history"
+
+images:
+  - path: "artifacts/care-clarity/public/images/medical-abstract.png"
+    description: "Soft, calming abstract gradient background in light blues and mint greens, medical aesthetic, very clean and minimal"
+    aspect_ratio: "16:9"
+
+notes:
+  - SpeechRecognition API usage relies on browser support (Chrome/Safari mostly).
+  - Using direct MyMemory API fallback if the backend `/api/translate` is unavailable to ensure the MVP works reliably.
+  - Using embedded i18n resources for guaranteed loading.

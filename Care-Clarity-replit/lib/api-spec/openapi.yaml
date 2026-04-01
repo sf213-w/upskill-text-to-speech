@@ -1,0 +1,100 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: Care Clarity API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: translate
+    description: Translation operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /translate:
+    post:
+      operationId: translateText
+      tags: [translate]
+      summary: Translate text
+      description: Translates text between Spanish and English using MyMemory API
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TranslateRequest"
+      responses:
+        "200":
+          description: Translation result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TranslateResponse"
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    TranslateRequest:
+      type: object
+      properties:
+        text:
+          type: string
+          description: Text to translate
+        from:
+          type: string
+          enum: [es, en]
+          description: Source language
+        to:
+          type: string
+          enum: [es, en]
+          description: Target language
+      required:
+        - text
+        - from
+        - to
+    TranslateResponse:
+      type: object
+      properties:
+        translatedText:
+          type: string
+          description: The translated text
+      required:
+        - translatedText
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error
